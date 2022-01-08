@@ -8,10 +8,16 @@
         <link rel="stylesheet" href="../assets/css/style.css">
         <link rel="stylesheet" href="../assets/css/mobile_style.css">
         <script src="./script.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer>
+            $(function () {
+                $("#navigation").load("/assets/html/nav.html");
+            });
+        </script>
     </head>
 
     <body>
-        <nav>
+        <nav id="navigation">
             <ul class="nav_links">
                 <li><a class="menu-button" href="/contact/index.html">Contact</a></li>
                 <li><a class="menu-button" href="/blog/index.html">Blog</a></li>
