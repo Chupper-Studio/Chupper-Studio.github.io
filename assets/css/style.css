@@ -3,6 +3,7 @@
 
 :root {
     --side_margin_nav: 20px;
+    --small_font_size: 24px
 }
 
 * {
@@ -31,6 +32,7 @@ a {
     text-decoration: none;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
+    font-size: var(--small_font_size)
 }
 
 
