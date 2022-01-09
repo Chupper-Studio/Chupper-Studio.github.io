@@ -96,7 +96,7 @@ nav > li{
     align-content: center;
     left: 30%;
     top: 40%;
-    transition: backgroundColor 1s ease;
+    animation: backgroundColor 1s ease infinite;
 }
 
 .warning > h1 {
