@@ -35,15 +35,13 @@ a {
 }
 
 .menu-button {
-
-    margin: 5px;
+    margin-right: 5px;
     color: #000000;
 }
 
 a:hover {
     color: #0099ff;
 }
-
 
 ul.nav_links {
     margin: 0px;
@@ -53,7 +51,7 @@ ul.nav_links {
 
 /* social_media buttons */
 .social_media {
-    
+    color: #000000;   
 }
 
 /* nav bar button */
@@ -68,6 +66,7 @@ nav > li{
     display: inline-block;
     margin-top: 10px;
     margin-left: var(--side_margin_nav);
+    color: #000000;   
 }
 
 /* Burder menu for mobile */
