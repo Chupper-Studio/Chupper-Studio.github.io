@@ -33,11 +33,6 @@ a {
     font-weight: 300;
 }
 
-.menu-button {
-    font-size: 24px;
-    margin-right: 5px;
-    color: #000000;
-}
 
 a:hover {
     color: #0099ff;
@@ -63,6 +58,10 @@ ul.nav_links {
 }
 
 /* home button */
+.home_button {
+    font-size: 20px;
+}
+
 nav > li{
     display: inline-block;
     margin-top: 10px;
@@ -70,7 +69,12 @@ nav > li{
     color: #000000;   
 }
 
-/* Burder menu for mobile */
+.menu-button {
+    font-size: 20px;
+    margin-right: 5px;
+    color: #000000;
+}
+/* Burger menu for mobile */
 .burger {
     display: none;
     float: right;
