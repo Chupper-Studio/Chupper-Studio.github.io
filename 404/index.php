@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="/assets/css/mobile_style.css"></head>
 
 <body>
+    <div class="warning">
     <h1 class="text-404">The Page You Entered Is Not Valid</h1>
     <a href="/">
         <div class="button">
             Home
         </div>
     </a>
+    </div>
 
 </body>
 

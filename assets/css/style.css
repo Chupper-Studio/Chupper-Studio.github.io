@@ -86,3 +86,10 @@ nav > li{
     transition: all 0.3s ease-in 0s;
 
 }
+
+/* 404 css */
+.warning {
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}
