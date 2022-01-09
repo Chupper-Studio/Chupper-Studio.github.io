@@ -1,6 +1,7 @@
 :root {
     --side_margin_nav: 5px;
     --nav_font_size: 20px;
+    --small_font_size: 16px
 }
 @media screen and (max-width: 480px) {
 
@@ -64,5 +65,9 @@
 
     input {
         border-radius: 5px;
+    }
+
+    a {
+        font-size: var(--small_font_size);
     }
 }
