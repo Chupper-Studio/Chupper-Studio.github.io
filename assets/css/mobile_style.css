@@ -1,7 +1,7 @@
 :root {
-    --side_margin_nav: 5px;
-    --nav_font_size: 20px;
-    --small_font_size: 16px
+    --side_margin_nav-mobile: 5px;
+    --nav_font_size-mobile: 20px;
+    --small_font_size-mobile: 16px
 }
 @media screen and (max-width: 480px) {
 
@@ -9,14 +9,14 @@
     .nav_links > li{
         display: inline-block;
         margin-top: 10px;
-        margin-right: var(--side_margin_nav);
+        margin-right: var(--side_margin_nav-mobile);
     }
 
     /* home button */
     nav > li{
         display: inline-block;
         margin-top: 10px;
-        margin-left: var(--side_margin_nav);
+        margin-left: var(--side_margin_nav-mobile);
     }
 }
 
@@ -29,7 +29,7 @@
     .nav_links > li {
         display: none;
         margin-top: 10px;
-        margin-right: var(--side_margin_nav);
+        margin-right: var(--side_margin_nav-mobile);
     }
     .burger {
         display: block;
@@ -53,21 +53,17 @@
 
 @media screen and (max-height: 180px) {
     .menu-button {
-        font-size: var(--nav_font_size);
+        font-size: var(--nav_font_size-mobile);
     }
     .home_button >a{
-        font-size: var(--nav_font_size);
+        font-size: var(--nav_font_size-mobile);
     }
 
     h1 {
         font-size: 1.2em;
     }
 
-    input {
-        border-radius: 5px;
-    }
-
     a {
-        font-size: var(--small_font_size);
+        font-size: var(--small_font_size-mobile);
     }
 }
