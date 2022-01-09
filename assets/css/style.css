@@ -89,7 +89,12 @@ nav > li{
 
 /* 404 css */
 .warning {
+    position: absolute;
     align-self: center;
     align-items: center;
     align-content: center;
+}
+
+.warning > h1 {
+    width: max-content;
 }
