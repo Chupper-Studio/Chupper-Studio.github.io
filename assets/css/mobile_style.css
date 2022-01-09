@@ -1,7 +1,9 @@
+:root {
+    --side_margin_nav: 5px;
+    --nav_font_size: 20px;
+}
 @media screen and (max-width: 480px) {
-    :root {
-        --side_margin_nav: 5px;
-    }
+
     /* nav bar button */
     .nav_links > li{
         display: inline-block;
@@ -50,7 +52,10 @@
 
 @media screen and (max-height: 180px) {
     .menu-button {
-        font-size: 20px;
+        font-size: var(--nav_font_size);
+    }
+    .home_button {
+        font-size: var(--nav_font_size);
     }
 
     h1 {
