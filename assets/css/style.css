@@ -25,15 +25,17 @@ h1, h2, h3 {
 li {
     text-decoration: none;
     list-style: none;
-
 }
-
 a {
     -webkit-tap-highlight-color: transparent;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 24px;
+}
+
+.menu-button {
+
     margin: 5px;
     color: #000000;
 }
@@ -47,6 +49,11 @@ ul.nav_links {
     margin: 0px;
     padding: 0px;
     float: right;
+}
+
+/* social_media buttons */
+.social_media {
+    
 }
 
 /* nav bar button */
