@@ -4,7 +4,8 @@
 <head>
     <title>404</title>
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/mobile_style.css"></head>
+    <link rel="stylesheet" href="/assets/css/mobile_style.css">
+</head>
 
 <body>
     <div class="warning">
@@ -15,7 +16,11 @@
         </div>
     </a>
     </div>
-
+    <style>
+        body {
+            background-color: red;
+        }
+    </style>
 </body>
 
 </html>
