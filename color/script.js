@@ -25,7 +25,6 @@ if (stored_value) {
         value = e.target.value;
         changeColor(value)
         localStorage.setItem('color', value);
-        // hexColor(value);
     });
 } else {
     input_box.addEventListener("input", function (e) {
@@ -45,11 +44,11 @@ if (stored_value) {
 
 function changeColor(value) {
     type = checkType(value);
-    if (type == 'rgb' || type == 'hsl' || type == 'cmyk') {
+    if (type === 'rgb' || type === 'hsl' || type === 'cmyk') {
         document.body.style.backgroundColor = type + value;
-    } else if (type == 'hex') {
+    } else if (type === 'hex') {
         hexColor(value);
-    } else if (type == 'name') {
+    } else if (type === 'name') {
         document.body.style.backgroundColor = value;
     }
 }
