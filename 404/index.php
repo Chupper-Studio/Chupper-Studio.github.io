@@ -19,6 +19,7 @@
     <style>
         body {
             background-color: red;
+            animation: backgroundColor 1s ease infinite;
         }
     </style>
 </body>
