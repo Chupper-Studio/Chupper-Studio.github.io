@@ -58,10 +58,6 @@ ul.nav_links {
 }
 
 /* home button */
-.home_button {
-    font-size: 20px;
-}
-
 nav > li{
     display: inline-block;
     margin-top: 10px;
@@ -69,14 +65,19 @@ nav > li{
     color: #000000;   
 }
 
+.home_button {
+    font-size: 24px;
+}
+
 .menu-button {
-    font-size: 20px;
+    font-size: 24px;
     margin-right: 5px;
     color: #000000;
 }
+
 /* Burger menu for mobile */
 .burger {
-    display: none;
+    display: none; /*doesn't display the burger menu on large-screen device*/
     float: right;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
