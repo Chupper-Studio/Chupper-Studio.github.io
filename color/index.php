@@ -14,9 +14,9 @@
     <body>
         <nav id="navigation">
             <ul class="nav_links">
-                <li><a class="menu-button" href="/contact/index.html">Contact</a></li>
-                <li><a class="menu-button" href="/blog/index.html">Blog</a></li>
-                <li><a class="menu-button" href="/color/index.html">Color</a></li>
+                <li><a class="menu-button" href="/contact/index.php">Contact</a></li>
+                <li><a class="menu-button" href="/blog/index.php">Blog</a></li>
+                <li><a class="menu-button" href="/color/index.php">Color</a></li>
 
             </ul>
             <div class="burger">
