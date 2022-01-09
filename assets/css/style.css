@@ -10,7 +10,7 @@
 }
 
 nav {
-    position: fixed;
+    position: static;
     left: 3px;
     right: 3px;
     top: 0px;
@@ -51,7 +51,8 @@ ul.nav_links {
 
 /* social_media buttons */
 .social_media {
-    color: #000000;   
+    color: #000000;
+
 }
 
 /* nav bar button */
