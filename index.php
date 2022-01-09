@@ -9,16 +9,21 @@
         <link rel="stylesheet" href="./assets/css/mobile_style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="/assets/script/color.js" async></script>
-        <script defer>
-            $(function () {
-                $("#navigation").load("/assets/html/nav.html");
-            });
-        </script>
     </head>
 
     <body>
-        <nav id="navigation">
-
+    <nav id="navigation">
+            <ul class="nav_links">
+                <li><a class="menu-button" href="./contact/index.html">Contact</a></li>
+                <li><a class="menu-button" href="/blog/index.html">Blog</a></li>
+                <li><a class="menu-button" href="/color/index.html">Color</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <li class="home_button"><a href="../index.html">Home</a></li>
         </nav>
     </body>
 

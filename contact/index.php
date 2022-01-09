@@ -9,11 +9,6 @@
         <link rel="stylesheet" href="../assets/css/mobile_style.css">
         <script src="/assets/script/color.js" defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script defer>
-            $(function () {
-                $("#navigation").load("/assets/html/nav.html");
-            });
-        </script>
     </head>
 
     <body>
@@ -30,6 +25,10 @@
             </div>
             <li class="home_button"><a href="../index.html">Home</a></li>
         </nav>
+        <ul class="social_media">
+            <li><a href="https://github.com/chupper100">GitHub</a></li>
+        </ul>
+
     </body>
 
     </html>
