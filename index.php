@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Chupper</title>
+        <title>chupper</title>
         <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="./assets/css/mobile_style.css">

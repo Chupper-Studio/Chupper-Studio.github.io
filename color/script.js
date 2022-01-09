@@ -26,7 +26,6 @@ if (stored_value) {
         changeColor(value)
         localStorage.setItem('color', value);
         // hexColor(value);
-
     });
 } else {
     input_box.addEventListener("input", function (e) {
