@@ -55,7 +55,7 @@
     .menu-button {
         font-size: var(--nav_font_size);
     }
-    .home_button {
+    .home_button >a{
         font-size: var(--nav_font_size);
     }
 
