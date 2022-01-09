@@ -96,6 +96,7 @@ nav > li{
     align-content: center;
     left: 30%;
     top: 40%;
+    transition: backgroundColor 1s ease;
 }
 
 .warning > h1 {
@@ -106,4 +107,14 @@ nav > li{
 .warning > a {
     color: white;
     width: max-content;
+}
+
+@keyframes backgroundColor {
+    0%{
+        background-color: red;
+    }
+    100%{
+        background-color: darkred;
+    }
+    
 }
