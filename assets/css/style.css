@@ -149,12 +149,12 @@ nav > li{
 ul.main_nav_links {
     display: inline-flex;
 }
-.sub_menu > li>a {
+.sub_menu > li > a {
     color:#000000;
 }
 
-.sub_menu > li>a:hover {
-    color:skyblue;
+.sub_menu > li:hover {
+   background-color:skyblue;
 }
 
 ul.sub_menu > li {
@@ -163,30 +163,28 @@ ul.sub_menu > li {
 }
 
 ul.sub_menu {
-    opacity: 0;
     position: absolute;
     visibility: collapse;
     background-color: #ffff;
     border: #000000 .05px solid;
     border-radius: 3px;
     color:black;
-    padding:0px; 
+    padding:0px;
+    width: max-content;
     margin-right:  calc(var(--side_margin_nav)+10px);
     display: none;
 }
 
 li.sub_menu:hover > ul.sub_menu {
     visibility:visible;
-    display: unset;
+    display: block;
     top: 45px;
-    opacity: 1;
 }
 
 ul.sub_menu:hover {
     visibility:visible;
-    display: unset;
+    display: block;
     top: 45px;
-    opacity: 1;
     box-shadow: #000 0px 0px 10px ;
     border: none;
 }
