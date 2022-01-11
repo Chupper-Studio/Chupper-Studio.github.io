@@ -32,7 +32,21 @@
         </nav>
         <div class="content">
             <h1 class="title">About Me</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum sed quae, corrupti sint doloribus suscipit earum corporis accusamus quas magni cupiditate quia est error a odit! Repudiandae et dolores impedit magnam soluta sapiente cupiditate modi quod exercitationem atque? Voluptatum corrupti maxime ad facilis ipsam nulla dolorum vitae alias laborum, optio, consectetur ex fuga, quis magni? Quas illo repudiandae quo unde excepturi alias iure. Id nostrum, distinctio deleniti voluptatibus temporibus perferendis doloremque quos reprehenderit similique voluptatem adipisci non cumque illum nihil explicabo excepturi voluptatum est dolore quod quibusdam natus quia vitae. Dolor ad dolorem fugit repudiandae est quis officia tenetur!</p>
+
+            <?php
+            $p1 = fopen('content/p1.txt', 'r');
+            $a = 1;
+            while(!feof($p1)){
+                $line = fgets($p1);
+                    echo "<p>$line</p>";
+                $a++;
+            }
+
+            fclose($p1);
+            fclose($p2);
+            ?>
+ 
+
         </div>
 </body>
 </html>
