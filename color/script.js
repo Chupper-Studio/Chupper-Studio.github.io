@@ -71,19 +71,33 @@ function checkType(value) {
 // function
 function hexColor(value) {
     document.body.style.backgroundColor = value;
-    document.ul.style.backgroundColor = value;
+    // document.ul.style.backgroundColor = value;
 
 
     changeColorOn = [
-        "a", "h1", "h2", "li"
+        "a", "h1", "h2"
     ];
+
+    // ignoreChangeColorOn = [
+    //     "sub_menu"
+    // ]
     changeColorOn.forEach(function (element) {
         tag_element = document.querySelectorAll(element)
         tag_element.forEach(function (element) {
             element.style.color = getContrastColor(value);
-        })
-    });
-}
+        }
+
+        )
+    })
+
+    // ignoreChangeColorOn.forEach(function (element) {
+    //     tag_element = document.querySelectorAll(element)
+    //     tag_element.forEach(function (element) {
+    //         element.style.color = getContrastColor(tag_element = document.querySelectorAll(element).forEach().style.color);
+    //     });
+    // });
+};
+
 
 
 
