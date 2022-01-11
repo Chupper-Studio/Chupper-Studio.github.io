@@ -4,6 +4,7 @@
 :root {
     --side_margin_nav: 20px;
     --small_font_size: 24px;
+    --default_border_radius: 3px;
 }
 
 * {
@@ -11,11 +12,20 @@
 }
 
 nav {
-    position: static;
+    position: absolute;
     left: 3px;
     right: 3px;
-    top: 0px;
+    top: 3px;
     /* border-bottom: #808080 solid ; */
+}
+
+nav:hover {
+    /* border-radius: var(--default_border_radius); */
+    left: 0px;
+    right: 0px;
+    top:0px;
+    /* background-color: red; */
+    box-shadow: #000 0px 1px 5px;
 }
 
 nav > li > a:hover {
@@ -60,7 +70,7 @@ ul.nav_links {
 /* nav bar button */
 .nav_links > li{
     display: inline-flex;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-right: var(--side_margin_nav);
 }
 
