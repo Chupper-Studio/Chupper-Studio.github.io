@@ -191,6 +191,7 @@ ul.sub_menu {
     width: max-content;
     margin-right:  15px;
     display: none;
+    padding : 0px 10px 0px 3px;
     /* margin-top: -3px; */
 }
 

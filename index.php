@@ -17,13 +17,15 @@
             <ul class="nav_links">
                 <li><a class="menu-button" href="/contact/index.php">Contact</a></li>
                 <li><a class="menu-button" href="/blog/index.php">Blog</a></li>
-                <li class="sub_menu">
+                
+                <li>
                     <a href="#">More</a>
                     <ul class="sub_menu">
                     <li><a class="menu-button" href="/color/index.php">/color</a></li>
                     <li><a class="menu-button" href="/test-page/index.php">/test-page</a></li>    
                 </ul>
                 </li>
+                
             </ul>
             <div class="burger">
                 <div class="line1"></div>
