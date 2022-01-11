@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --side_margin_nav: 10px;
+    --small_font_size: 24px;
+    --default_border_radius: 5px;
+
+    --text_font_size: 20px;
+}
+
+* {
+    margin:0px;
+    padding: 0px;
+    transition: all 0.3s ease;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+nav {
+    position: initial;
+    padding: 5px var(--side_margin_nav) 5px var(--side_margin_nav);
+    margin: 0px 0px 0px 0px;
+    background-color: black;
+    /* border-bottom: #808080 solid ; */
+}
+
+h1, h2 ,h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    width: max-content;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: var(--small_font_size);
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+
+ul.nav_links {
+    float: right;
+}
+
+.nav_links > li {
+}
+
+.nav_links > li >a {
+    color: #ffffff;
+    margin: 0px 5px 0px 5px;
+}
+
+nav > li{
+    display: inline-flex;
+    margin: 0px 5px 0px 5px;
+    color: #ffffff;
+}
+
+nav > li > a{
+    color: #ffffff;
+}
+
+.nav_links > li {
+    display: inline-flex;
+}
+
+
+li > .sub_menu {
+    position: absolute;
+    display: none;
+    opacity: 0;
+    color: white;
+    margin-top: 33.5px;
+    background-color: black;
+    padding: 5px 2px 5px 2px;
+}
+
+li:hover > .sub_menu {
+    display: initial;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.sub_menu:hover {
+    display: initial;
+    visibility: visible;
+    opacity: 1;
+}
+
+.sub_menu > li >a {
+    color: white;
+    background-color: black;
+}
+
+.content {
+    padding: 0px 5px 5px 5px;
+    margin: 10px 30px 0px 30px;
+    background-color: white;
+    color: black;
+    border-radius: var(--default_border_radius);
+}
+
+.content > p {
+    font-size: var(--text_font_size);
+}

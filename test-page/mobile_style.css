@@ -1,0 +1,32 @@
+.burger {
+    display: none; /*doesn't display the burger menu on large-screen device*/
+    float: right;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    padding: 0px 0px 0px 0px;
+}
+.burger div{
+    border-radius: 5px;
+    width: 30px;
+    height: 5px;
+    margin: 0px 5px 5px 5px;
+    background-color: white;
+    transition: all 0.3s ease-in 0s;
+
+}
+
+@media screen and (max-width:480px) {
+    .content {
+        padding: 0px 0px 5px 5px;
+        margin: 0px 0px 0px 0px;
+        border-radius: none;
+    }
+
+    .nav_links {
+        display:none;
+    }
+
+    .burger {
+        display: block;
+    }
+}
