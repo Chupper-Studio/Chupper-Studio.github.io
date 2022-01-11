@@ -71,9 +71,11 @@ function checkType(value) {
 // function
 function hexColor(value) {
     document.body.style.backgroundColor = value;
+    document.ul.style.backgroundColor = value;
+
 
     changeColorOn = [
-        "a", "h1", "h2"
+        "a", "h1", "h2", "li"
     ];
     changeColorOn.forEach(function (element) {
         tag_element = document.querySelectorAll(element)
