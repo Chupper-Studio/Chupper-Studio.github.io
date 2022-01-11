@@ -21,11 +21,11 @@ nav {
 
 nav:hover {
     /* border-radius: var(--default_border_radius); */
-    left: 0px;
+    /* left: 0px;
     right: 0px;
-    top:0px;
+    top:0px; */
     /* background-color: red; */
-    box-shadow: #000 0px 1px 5px;
+    /* box-shadow: #000 0px 1px 5px; */
 }
 
 nav > li > a:hover {
@@ -63,8 +63,12 @@ ul.nav_links {
 
 /* social_media buttons */
 .social_media {
+    width: max-content;
     color: #000000;
-
+    position:relative;
+    padding-left: 15px;
+    margin-top: 50px;
+    /* top: 10px; */
 }
 
 /* nav bar button */
@@ -168,8 +172,8 @@ ul.main_nav_links {
 }
 
 ul.sub_menu > li {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 3px; 
+    padding-right: 1px;
 }
 
 ul.sub_menu {
@@ -181,20 +185,21 @@ ul.sub_menu {
     color:black;
     padding:0px;
     width: max-content;
-    margin-right:  calc(var(--side_margin_nav)+10px);
+    margin-right:  15px;
     display: none;
+    /* margin-top: -3px; */
 }
 
 li.sub_menu:hover > ul.sub_menu {
     visibility:visible;
     display: block;
-    top: 45px;
+    top: 30px;
 }
 
 ul.sub_menu:hover {
     visibility:visible;
     display: block;
-    top: 45px;
+    top: 30px;
     box-shadow: #000 0px 0px 10px ;
     border: none;
 }
