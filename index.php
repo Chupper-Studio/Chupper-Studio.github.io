@@ -13,7 +13,7 @@
 
     <body>
     <nav>
-        <li class="home_button"><a href="/">Home</a></li>
+        <li class="home_button active"><a href="#">Home</a></li>
             <ul class="nav_links">
                 <li><a class="menu-button" href="/contact/index.php">Contact</a></li>
                 <li><a class="menu-button" href="/blog/index.php">Blog</a></li>
@@ -21,7 +21,7 @@
                     <a href="#">More</a>
                     <ul class="sub_menu">
                     <li><a class="menu-button" href="/color/index.php">/color</a></li>
-                    <li><a class="menu-button" href="/color/index.php">/color</a></li>    
+                    <!-- <li><a class="menu-button" href="/#">/</a></li>     -->
                 </ul>
                 </li>
             </ul>

@@ -20,8 +20,7 @@
                 <li class="sub_menu">
                     <a href="#">More</a>
                     <ul class="sub_menu">
-                    <li><a class="menu-button" href="/color/index.php">/color</a></li>
-                    <li><a class="menu-button" href="/color/index.php">/color</a></li>    
+                    <li class="active"><a class="menu-button" href="#">/color</a></li>    
                 </ul>
                 </li>
             </ul>

@@ -41,19 +41,25 @@ li {
     text-decoration: none;
     list-style: none;
 }
+
+.active > a/*current page*/ {
+    color: blue;
+}
+
 a {
     -webkit-tap-highlight-color: transparent;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: var(--small_font_size);
-    color:black;
+    color:#000000;
+    
 }
 
 
-a:hover {
-    color: #0099ff;
-}
+/* a:hover {
+    color: skyblue;
+} */
 
 ul.nav_links {
     margin: 0px;
@@ -91,7 +97,6 @@ nav > li{
 }
 
 .home_button > a {
-    color: #000000;
     font-size: 24px;
 }
 
@@ -164,7 +169,6 @@ ul.main_nav_links {
     display: inline-flex;
 }
 .sub_menu > li > a {
-    color:#000000;
 }
 
 .sub_menu > li:hover {
