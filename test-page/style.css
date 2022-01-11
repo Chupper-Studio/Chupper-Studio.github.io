@@ -10,6 +10,7 @@
 }
 
 * {
+    -webkit-tap-highlight-color: transparent;
     margin:0px;
     padding: 0px;
     transition: all 0.3s ease;
@@ -83,9 +84,11 @@ li > .sub_menu {
     display: none;
     opacity: 0;
     color: white;
-    margin-top: 33.5px;
     background-color: black;
-    padding: 5px 2px 5px 2px;
+    padding: 0px 0px 0px 0px;
+    margin: 33.5px var(--side_margin_nav) 0px 0px;
+    border-radius: var(--default_border_radius);
+    width: min-content;
 }
 
 li:hover > .sub_menu {
@@ -103,7 +106,14 @@ li:hover > .sub_menu {
 
 .sub_menu > li >a {
     color: white;
-    background-color: black;
+}
+
+.sub_menu > li {
+    margin: 0px 0px 0px 0px;
+    border-radius: var(--default_border_radius);
+}
+.sub_menu > li:hover {
+    background-color: skyblue;
 }
 
 .content {

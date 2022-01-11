@@ -29,4 +29,7 @@
     .burger {
         display: block;
     }
+    .sub_menu > li:active {
+        background-color: skyblue;
+    }
 }
