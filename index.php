@@ -21,7 +21,7 @@
                     <a href="#">More</a>
                     <ul class="sub_menu">
                     <li><a class="menu-button" href="/color/index.php">/color</a></li>
-                    <!-- <li><a class="menu-button" href="/#">/</a></li>     -->
+                    <li><a class="menu-button" href="/test-page/index.php">/test-page</a></li>    
                 </ul>
                 </li>
             </ul>
