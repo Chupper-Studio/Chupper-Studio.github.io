@@ -282,3 +282,12 @@ footer > p.copyright{
     color: #fff;
     font-size: 20px;
 }
+
+footer option {
+    color:#ffffff;
+    background: black;
+}
+
+footer select {
+    border-radius: var(--default_border_radius);
+}

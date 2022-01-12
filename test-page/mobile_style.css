@@ -12,8 +12,9 @@
     margin: 0px 5px 5px 5px;
     background-color: white;
     transition: all 0.3s ease-in 0s;
-
 }
+
+
 
 @media screen and (max-width:480px) {
     .content {
@@ -45,5 +46,10 @@
         color:#ffffff;
         width: max-content;
         font-weight: 500;
+    }
+
+    .social-icon li a {
+        width:30px;
+        height:30px;
     }
 }

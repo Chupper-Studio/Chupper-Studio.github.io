@@ -25,7 +25,7 @@ if(isset($_SESSION['lang'])){
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/c2002390b5.js" crossorigin="anonymous"></script>    <script src="/assets/script/createId.js" defer></script>
     <script src="/assets/script/change_language.js"></script>
-    <title>Document</title>
+    <title><?=_HOME?></title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile_style.css">
@@ -87,7 +87,8 @@ if(isset($_SESSION['lang'])){
                 <h2><?= _ABOUT_US_TITLE ?></h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore est architecto odio cumque mollitia soluta necessitatibus aperiam, assumenda quas? Nam commodi magnam alias fugiat expedita?</p>
              <ul class="social-icon">
-<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                  <li><a href="#"><i class="fa fa-youtube"></i></a></li>
              </ul>
