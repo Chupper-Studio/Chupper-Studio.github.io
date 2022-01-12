@@ -1,0 +1,1 @@
+Form: define("ENGLISH_WORD_IN_UPPERCASE_UNDERSCORED","Translation")

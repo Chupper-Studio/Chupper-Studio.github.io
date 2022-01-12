@@ -1,11 +1,30 @@
+<?php
+session_start();
+// Đặt biến ngôn ngữ
+if(isset($_GET['lang']) && !empty($_GET['lang'])){
+ $_SESSION['lang'] = $_GET['lang'];
+ if(isset($_SESSION['lang']) && $_SESSION['lang'] != $_GET['lang']){
+  echo "<script type='text/javascript'> location.reload(); </script>";
+ }
+}
+// Chèn vào tệp tin ngôn ngữ, ngôn ngữ mặc định là tiếng Anh
+if(isset($_SESSION['lang'])){
+ include "../assets/languages/lang_".$_SESSION['lang'].".php";
+}else{
+ include "../assets/languages/lang_en.php";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/assets/script/script.js" defer></script>
+    <script src="/assets/script/createId.js" defer></script>
+    <script src="/assets/script/change_language.js"></script>
     <title>Document</title>
 
     <link rel="stylesheet" href="style.css">
@@ -13,13 +32,13 @@
 </head>
 <body>
 <nav>
-        <li class="home_button active"><a href="#">Home</a></li>
+        <li class="home_button active"><a href="#"><?= _HOME ?></a></li>
             <ul class="nav_links">
-                <li><a class="menu-button" href="/contact/index.php">Contact</a></li>
+                <li><a class="menu-button" href="/contact/index.php"><?= _CONTACT ?></a></li>
                 <li><a class="menu-button" href="/blog/index.php">Blog</a></li>
                 
                 <li>
-                    <a href="#">More</a>
+                    <a href="#"><?= _MORE ?></a>
                     <ul class="sub_menu">
                     <li><a class="menu-button" href="/color/index.php">/color</a></li>
                     <li><a class="menu-button" href="/test-page/index.php">/test-page</a></li>    
@@ -33,6 +52,7 @@
                 <div class="line3"></div>
             </div>
         </nav>
+        <!-- START: TABLE OF CONTENTS SCRIPT  -->
         <script>
             var ToC="<nav role='navigation' class='table-of-contents> +<h2>On this page:</h2>+<ul>";
             $(".content h2").each(function(){
@@ -45,6 +65,7 @@
 
             $(".content").prepend(ToC);
         </script>
+        <!-- END: TABLE OF CONTENTS SCRIPT -->
         <div class="content">
             <h1 class="title">title</h1>
             <h2>About Me</h2>
@@ -56,9 +77,10 @@
         </div>
 
         <footer>
+ </form>
             <div class="container">
             <div class="about">
-                <h2>Về Chúng Tôi</h2>
+                <h2><?= _ABOUT_US_TITLE ?></h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore est architecto odio cumque mollitia soluta necessitatibus aperiam, assumenda quas? Nam commodi magnam alias fugiat expedita?</p>
              <ul class="social-icon">
                  <li><a href=""><i class="fa fa-facebook"></i></a></li>
@@ -68,7 +90,7 @@
              </ul>
             </div>
             <div class="links">
-                <h2>Liên Kết</h2>
+                <h2><?= _LINKS ?></h2>
                 <ul>
                  <li><a href="#">Trang Chủ</a></li>
                  <li><a href="#">Về Chúng Tôi</a></li>
@@ -78,7 +100,7 @@
              </ul>
             </div>
             <div class="contact">
-                <h2>Liên Hệ</h2>            
+                <h2><?= _CONTACT ?></h2>            
              <ul class="info">
                  <li>
                      <span><i class="fa fa-map-marker"></i></span>
@@ -92,21 +114,17 @@
                          <br />
                          <a href="#">+84 987 654 321</a></p>
                  </li>
-                 <li>
-                     <span><i class="fa fa-envelope"></i></span>
-                     <p><a href="#">diachiemail@gmail.com</a></p>
-                </li>
-                 <li>
-                     <form class="form">
-                         <input type="email" class="form__field" placeholder="Đăng Ký Subscribe Email" />
-                         <button type="button" class="btn btn--primary  uppercase">Gửi</button>
-                     </form>
-                 </li>
             </div>
-
+        </div>
+        <div class="lang_form">
+            <form method='get' action='' id='form_lang' >
+                <?= _SELECT_LANGUAGE?>: <select style="background-color:transparent; color: white; border:none; font-size:var(--footer_text_font_size);" name='lang' onchange='changeLang();' >
+                <option value='en' <?php if(isset($_SESSION['lang']) && $_SESSION['lang'] == 'en'){ echo "selected"; } ?> >English</option>
+                <option value='vi' <?php if(isset($_SESSION['lang']) && $_SESSION['lang'] == 'vi'){ echo "selected"; } ?> >Tiếng Việt</option>
+            </select>
             </div>
-        <p class="copyright"style="text-align: center"> Copyright <strong>chupper-website.herokuapp.com</strong>&copy; 2022 - <script>document.write(new Date().getFullYear())</script><br/>All Rights Reserved</p>            
-        </footer>
+            <p class="copyright"style="text-align: center"> Copyright <strong>chupper-website.herokuapp.com</strong>&copy; 2022 - <script>document.write(new Date().getFullYear())</script><br/>All Rights Reserved</p>            
+    </footer>
 
 </body>
 </html>
