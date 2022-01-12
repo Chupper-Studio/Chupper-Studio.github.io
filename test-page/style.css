@@ -9,6 +9,10 @@
     --footer-text_font_size: 16px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     -webkit-tap-highlight-color: transparent;
     margin:0px;

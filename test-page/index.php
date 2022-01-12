@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/assets/script/script.js" defer></script>
     <title>Document</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile_style.css">
 </head>
@@ -30,7 +33,18 @@
                 <div class="line3"></div>
             </div>
         </nav>
+        <script>
+            var ToC="<nav role='navigation' class='table-of-contents> +<h2>On this page:</h2>+<ul>";
+            $(".content h2").each(function(){
+                var id=$(this).attr("id");
+                var text=$(this).text();
+                newLine="<li><a href='#"+id+"'>"+text+"</a></li>";
+                ToC+=newLine;
+            });
+            ToC+="</ul></nav>";
 
+            $(".content").prepend(ToC);
+        </script>
         <div class="content">
             <h1 class="title">title</h1>
             <h2>About Me</h2>
@@ -93,5 +107,6 @@
             </div>
         <p class="copyright"style="text-align: center"> Copyright <strong>chupper-website.herokuapp.com</strong>&copy; 2022 - <script>document.write(new Date().getFullYear())</script><br/>All Rights Reserved</p>            
         </footer>
+
 </body>
 </html>

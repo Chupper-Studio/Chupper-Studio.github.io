@@ -1,0 +1,3 @@
+- Post's content must be stored in div.content
+- Post section's title must be h2
+- Post title must be h1 
