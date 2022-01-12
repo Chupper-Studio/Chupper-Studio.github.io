@@ -254,3 +254,31 @@ footer > p.copyright{
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
+  /*Thiết Lập Cho Thành Phần Icon Mạng Xã Hội*/
+ .social-icon{
+    margin-top: 20px;
+    display: flex;
+}
+.social-icon li {
+    list-style: none;
+}
+.social-icon li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: var(--default_border_radius);
+}
+.social-icon li a:hover{
+    background: #000;
+}
+.social-icon li a .fa{
+    color: #fff;
+    font-size: 20px;
+}

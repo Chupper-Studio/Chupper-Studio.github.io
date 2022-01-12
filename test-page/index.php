@@ -23,7 +23,7 @@ if(isset($_SESSION['lang'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="/assets/script/createId.js" defer></script>
+    <script src="https://kit.fontawesome.com/c2002390b5.js" crossorigin="anonymous"></script>    <script src="/assets/script/createId.js" defer></script>
     <script src="/assets/script/change_language.js"></script>
     <title>Document</title>
 
@@ -74,6 +74,10 @@ if(isset($_SESSION['lang'])){
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, nam. Hic, explicabo corrupti magni impedit assumenda repellat suscipit magnam cumque tempora eum, doloremque officiis delectus animi possimus labore quibusdam ratione nostrum facilis nulla ex rem? Impedit, a. Quidem, eaque aspernatur, reprehenderit, voluptatem fuga doloremque asperiores consequuntur enim maxime nemo animi.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, nam. Hic, explicabo corrupti magni impedit assumenda repellat suscipit magnam cumque tempora eum, doloremque officiis delectus animi possimus labore quibusdam ratione nostrum facilis nulla ex rem? Impedit, a. Quidem, eaque aspernatur, reprehenderit, voluptatem fuga doloremque asperiores consequuntur enim maxime nemo animi.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, nam. Hic, explicabo corrupti magni impedit assumenda repellat suscipit magnam cumque tempora eum, doloremque officiis delectus animi possimus labore quibusdam ratione nostrum facilis nulla ex rem? Impedit, a. Quidem, eaque aspernatur, reprehenderit, voluptatem fuga doloremque asperiores consequuntur enim maxime nemo animi.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, nam. Hic, explicabo corrupti magni impedit assumenda repellat suscipit magnam cumque tempora eum, doloremque officiis delectus animi possimus labore quibusdam ratione nostrum facilis nulla ex rem? Impedit, a. Quidem, eaque aspernatur, reprehenderit, voluptatem fuga doloremque asperiores consequuntur enim maxime nemo animi.</p>
+            <h2>Lorem, ipsum.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, quas?</p>
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quo! Aperiam, quidem asperiores ratione commodi earum repudiandae accusantium excepturi libero, dicta officia fuga consequuntur pariatur fugiat neque quaerat quod optio eius suscipit? Ducimus mollitia rerum ipsum id modi non reprehenderit?</p>
         </div>
 
         <footer>
@@ -83,10 +87,9 @@ if(isset($_SESSION['lang'])){
                 <h2><?= _ABOUT_US_TITLE ?></h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore est architecto odio cumque mollitia soluta necessitatibus aperiam, assumenda quas? Nam commodi magnam alias fugiat expedita?</p>
              <ul class="social-icon">
-                 <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                 <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                 <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                 <li><a href=""><i class="fa fa-youtube"></i></a></li>
+<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                 <li><a href="#"><i class="fa fa-youtube"></i></a></li>
              </ul>
             </div>
             <div class="links">
@@ -104,21 +107,18 @@ if(isset($_SESSION['lang'])){
              <ul class="info">
                  <li>
                      <span><i class="fa fa-map-marker"></i></span>
-                     <span>Đường Số 1<br />
-                         Quận 1, Thành Phố Hồ Chí Minh<br />
-                         Việt Nam</span>
+                     <span><?=_ADDRESS?></span>
                  </li>
                  <li>
                      <span><i class="fa fa-phone"></i></span>
-                     <p><a href="#">+84 123 456 789</a>
-                         <br />
-                         <a href="#">+84 987 654 321</a></p>
+                     <a href="#">+84 123 456 789</a>
                  </li>
             </div>
         </div>
         <div class="lang_form">
             <form method='get' action='' id='form_lang' >
-                <?= _SELECT_LANGUAGE?>: <select style="background-color:transparent; color: white; border:none; font-size:var(--footer_text_font_size);" name='lang' onchange='changeLang();' >
+            <i class="fas fa-globe"></i>
+            <?= _SELECT_LANGUAGE?>: <select style="background-color:transparent; color: white; border:none; font-size:var(--footer_text_font_size);" name='lang' onchange='changeLang();' >
                 <option value='en' <?php if(isset($_SESSION['lang']) && $_SESSION['lang'] == 'en'){ echo "selected"; } ?> >English</option>
                 <option value='vi' <?php if(isset($_SESSION['lang']) && $_SESSION['lang'] == 'vi'){ echo "selected"; } ?> >Tiếng Việt</option>
             </select>
