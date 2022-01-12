@@ -195,7 +195,7 @@ ul.sub_menu {
     /* margin-top: -3px; */
 }
 
-li.sub_menu:hover > ul.sub_menu {
+li.sub_menu:hover ul.sub_menu {
     visibility:visible;
     display: block;
     top: 30px;

@@ -30,23 +30,66 @@
                 <div class="line3"></div>
             </div>
         </nav>
+
         <div class="content">
             <h1 class="title">title</h1>
             <h2>About Me</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia optio aliquid perspiciatis qui, ipsum eum architecto ipsa non accusamus tempore iste cupiditate consequatur ex nihil quasi autem suscipit repellat ea fugit? Maxime at necessitatibus fuga ea cupiditate nostrum error consectetur, veniam delectus dolor libero neque iusto officia veritatis dolorem corrupti. Molestias, maxime nihil autem ea est libero optio facere animi nam accusantium, soluta ullam culpa totam esse atque sit ab eaque! Ipsum expedita ad quis amet fuga enim ullam aperiam culpa voluptate, officiis vero magnam suscipit quasi veniam! Officia voluptatem debitis veritatis molestiae exercitationem aspernatur eos rerum distinctio officiis sapiente!</p>
             <h2>Contact</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, nam. Hic, explicabo corrupti magni impedit assumenda repellat suscipit magnam cumque tempora eum, doloremque officiis delectus animi possimus labore quibusdam ratione nostrum facilis nulla ex rem? Impedit, a. Quidem, eaque aspernatur, reprehenderit, voluptatem fuga doloremque asperiores consequuntur enim maxime nemo animi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, nam. Hic, explicabo corrupti magni impedit assumenda repellat suscipit magnam cumque tempora eum, doloremque officiis delectus animi possimus labore quibusdam ratione nostrum facilis nulla ex rem? Impedit, a. Quidem, eaque aspernatur, reprehenderit, voluptatem fuga doloremque asperiores consequuntur enim maxime nemo animi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, nam. Hic, explicabo corrupti magni impedit assumenda repellat suscipit magnam cumque tempora eum, doloremque officiis delectus animi possimus labore quibusdam ratione nostrum facilis nulla ex rem? Impedit, a. Quidem, eaque aspernatur, reprehenderit, voluptatem fuga doloremque asperiores consequuntur enim maxime nemo animi.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, nam. Hic, explicabo corrupti magni impedit assumenda repellat suscipit magnam cumque tempora eum, doloremque officiis delectus animi possimus labore quibusdam ratione nostrum facilis nulla ex rem? Impedit, a. Quidem, eaque aspernatur, reprehenderit, voluptatem fuga doloremque asperiores consequuntur enim maxime nemo animi.</p>
         </div>
 
         <footer>
+            <div class="container">
             <div class="about">
                 <h2>Về Chúng Tôi</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore est architecto odio cumque mollitia soluta necessitatibus aperiam, assumenda quas? Nam commodi magnam alias fugiat expedita?</p>
+             <ul class="social-icon">
+                 <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                 <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                 <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                 <li><a href=""><i class="fa fa-youtube"></i></a></li>
+             </ul>
             </div>
             <div class="links">
                 <h2>Liên Kết</h2>
+                <ul>
+                 <li><a href="#">Trang Chủ</a></li>
+                 <li><a href="#">Về Chúng Tôi</a></li>
+                 <li><a href="#">Thông Tin Liên Lạc</a></li>
+                 <li><a href="#">Dịch Vụ</a></li>
+                 <li><a href="#">Điều Kiện Chính Sách</a></li>
+             </ul>
             </div>
             <div class="contact">
-                <h2>Liên Hệ</h2>
+                <h2>Liên Hệ</h2>            
+             <ul class="info">
+                 <li>
+                     <span><i class="fa fa-map-marker"></i></span>
+                     <span>Đường Số 1<br />
+                         Quận 1, Thành Phố Hồ Chí Minh<br />
+                         Việt Nam</span>
+                 </li>
+                 <li>
+                     <span><i class="fa fa-phone"></i></span>
+                     <p><a href="#">+84 123 456 789</a>
+                         <br />
+                         <a href="#">+84 987 654 321</a></p>
+                 </li>
+                 <li>
+                     <span><i class="fa fa-envelope"></i></span>
+                     <p><a href="#">diachiemail@gmail.com</a></p>
+                </li>
+                 <li>
+                     <form class="form">
+                         <input type="email" class="form__field" placeholder="Đăng Ký Subscribe Email" />
+                         <button type="button" class="btn btn--primary  uppercase">Gửi</button>
+                     </form>
+                 </li>
+            </div>
+
             </div>
         <p class="copyright"style="text-align: center"> Copyright <strong>chupper-website.herokuapp.com</strong>&copy; 2022 - <script>document.write(new Date().getFullYear())</script><br/>All Rights Reserved</p>            
         </footer>
