@@ -24,13 +24,15 @@ if(isset($_SESSION['lang'])){
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/c2002390b5.js" crossorigin="anonymous"></script>    <script src="/assets/script/createId.js" defer></script>
-    <script src="/assets/script/change_language.js"></script>
+    <script src="/assets/script/functions.js" defer></script>
+    <script src="/assets/script/createId.js" defer></script>
     <title><?=_HOME?></title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile_style.css">
 </head>
 <body>
+<!-- <iframe src="../loading/index.php" id='iframe'></iframe> -->
 <nav>
         <li class="home_button active"><a href="#"><?= _HOME ?></a></li>
             <ul class="nav_links">
@@ -87,17 +89,17 @@ if(isset($_SESSION['lang'])){
                 <h2><?= _ABOUT_US_TITLE ?></h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore est architecto odio cumque mollitia soluta necessitatibus aperiam, assumenda quas? Nam commodi magnam alias fugiat expedita?</p>
              <ul class="social-icon">
-                 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                 <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                 <li><a href="https://example.com/facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                 <li><a href="https://example.com/twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                 <li><a href="https://example.com/instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                 <li><a href="https://example.com/youtube"><i class="fa-brands fa-youtube"></i></a></li>
              </ul>
             </div>
             <div class="links">
                 <h2><?= _LINKS ?></h2>
                 <ul>
-                 <li><a href="#">Trang Chủ</a></li>
-                 <li><a href="#">Về Chúng Tôi</a></li>
+                 <li><a href="#"><?= _HOME?></a></li>
+                 <li><a href="#"><?= _ABOUT_US_TITLE?></a></li>
                  <li><a href="#">Thông Tin Liên Lạc</a></li>
                  <li><a href="#">Dịch Vụ</a></li>
                  <li><a href="#">Điều Kiện Chính Sách</a></li>
@@ -116,15 +118,17 @@ if(isset($_SESSION['lang'])){
                  </li>
             </div>
         </div>
-        <div class="lang_form">
-            <form method='get' action='' id='form_lang' >
-            <i class="fas fa-globe"></i>
-            <?= _SELECT_LANGUAGE?>: <select style="background-color:transparent; color: white; border:none; font-size:var(--footer_text_font_size);" name='lang' onchange='changeLang();' >
-                <option value='en' <?php if(isset($_SESSION['lang']) && $_SESSION['lang'] == 'en'){ echo "selected"; } ?> >English</option>
-                <option value='vi' <?php if(isset($_SESSION['lang']) && $_SESSION['lang'] == 'vi'){ echo "selected"; } ?> >Tiếng Việt</option>
-            </select>
-            </div>
-            <p class="copyright"style="text-align: center"> Copyright <strong>chupper-website.herokuapp.com</strong>&copy; 2022 - <script>document.write(new Date().getFullYear())</script><br/>All Rights Reserved</p>            
+        <div class="lang_form" style="width: max-content;float: right;margin-bottom: 0px;">
+            <form method="get" action="" id="form_lang" style="width: max-content;">
+            <i class="fas fa-globe" aria-hidden="true"></i>
+            <?=_SELECT_LANGUAGE?>: <select name='lang' onchange='changeLang();' >
+            <option value='en' <?php if(isset($_SESSION['lang']) && $_SESSION['lang'] == 'en'){ echo "selected"; } ?> >English</option>
+            <option value='vi' <?php if(isset($_SESSION['lang']) && $_SESSION['lang'] == 'vi'){ echo "selected"; } ?> >Vietnamese</option>
+  </select>
+            </form>
+        </div>
+
+            <p class="copyright"style="text-align: center"><?=_COPYRIGHT?></p>            
     </footer>
 
 </body>

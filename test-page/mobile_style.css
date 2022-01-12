@@ -52,4 +52,7 @@
         width:30px;
         height:30px;
     }
+    footer .container {
+        flex-direction: column;
+    }
 }

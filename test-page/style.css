@@ -7,6 +7,7 @@
     --default_border_radius: 5px;
     --text_font_size: 20px;
     --footer-text_font_size: 16px;
+    --footer-low_attention_text_color: #797979;
 }
 
 html {
@@ -26,6 +27,7 @@ body {
     background-color: whitesmoke;
     height: 100%;
     min-height: 100%;
+    color: var(--footer-low_attention_text_color);
 }
 
 nav {
@@ -146,7 +148,7 @@ li:hover > .sub_menu {
 }
 
 footer {
-    color: #ffffff;
+    /* color: #ffffff; */
     margin-bottom: 0px;
     background-color: #111;
     display: block;
@@ -218,7 +220,7 @@ footer > p > a,strong{
 
 footer > p.copyright{
     font-size: 14px;
-    color: #797979;
+    color: var(--footer-low_attention_text_color);
  }
 
  footer > p.copyright >a,strong{
@@ -289,5 +291,13 @@ footer option {
 }
 
 footer select {
-    border-radius: var(--default_border_radius);
+    margin-top:0px;
+    background-color:transparent;
+    color: var(--footer-low_attention_text_color);
+    border:none;
+    font-size:var(--footer_text_font_size);
+}
+
+.form_lang{
+    color: var(--footer-low_attention_text_color);
 }
