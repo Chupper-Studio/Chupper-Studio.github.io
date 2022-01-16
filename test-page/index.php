@@ -127,7 +127,6 @@ if(isset($_SESSION['lang'])){
   </select>
             </form>
         </div>
-
             <p class="copyright"style="text-align: center"><?=_COPYRIGHT?></p>            
     </footer>
 
