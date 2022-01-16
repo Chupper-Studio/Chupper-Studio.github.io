@@ -11,27 +11,6 @@
     transition: all 0.3s ease;
 }
 
-nav {
-    position: absolute;
-    left: 3px;
-    right: 3px;
-    top: 3px;
-    /* border-bottom: #808080 solid ; */
-}
-
-nav:hover {
-    /* border-radius: var(--default_border_radius); */
-    /* left: 0px;
-    right: 0px;
-    top:0px; */
-    /* background-color: red; */
-    /* box-shadow: #000 0px 1px 5px; */
-}
-
-nav > li > a:hover {
-    color: skyblue;
-}
-
 h1, h2, h3 {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -42,10 +21,6 @@ li {
     list-style: none;
 }
 
-.active > a/*current page*/ {
-    color: blue;
-}
-
 a {
     -webkit-tap-highlight-color: transparent;
     text-decoration: none;
@@ -53,13 +28,19 @@ a {
     font-weight: 300;
     font-size: var(--small_font_size);
     color:#000000;
-    
+}z
+
+nav {
+    position: absolute;
+    left: 3px;
+    right: 3px;
+    top: 3px;
 }
 
-
-/* a:hover {
+nav > li > a:hover {
     color: skyblue;
-} */
+}
+  
 
 ul.nav_links {
     margin: 0px;
@@ -108,7 +89,7 @@ nav > li{
 
 /* Burger menu for mobile */
 .burger {
-    display: none; /*doesn't display the burger menu on large-screen device*/
+    display: none;
     float: right;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
@@ -192,7 +173,6 @@ ul.sub_menu {
     margin-right:  15px;
     display: none;
     padding : 0px 10px 0px 3px;
-    /* margin-top: -3px; */
 }
 
 li.sub_menu:hover ul.sub_menu {
